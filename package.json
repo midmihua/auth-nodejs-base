@@ -1,0 +1,24 @@
+{
+  "name": "auth-nodejs-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "up": "mkdir -p data && docker-compose up -d",
+    "postup": "npm run dev",
+    "stop": "docker-compose stop",
+    "down": "docker-compose down",
+    "dev": "npm run dev --prefix api"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.0",
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/hapi__joi": "^16.0.9"
+  }
+}
